@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="keybord3_btn">#D2D2D2</color>
+    <color name="normal_bg_keybord">#E0E9F5</color>
+    <color name="keybord_top_text">#5A6572</color>
+    <color name="keybord3_btn_top">#D2D2D2</color>
+    <color name="btn_purpal">#ACB8FB</color>
+    <color name="newbtn_text_color">#484848</color>
+    <color name="key_purpal">#DBE0FF</color>
+
+
+
+    <color name="themeColor">#089371</color>
+    <color name="themeColor_lighter">#DFFFE5</color>
+    <color name="green">#00AE0C</color>
+    <color name="grey">#A3A3A3</color>
+    <color name="light_blue">#EEEEEE</color>
+    <color name="hint_color">#C5C5C5</color>
+    <color name="setting_card">#FFFFFF</color>
+    <color name="share_btn">#6D6D6D</color>
+    <color name="light_green">#87E1BC</color>
+    <color name="light_grey">#ECECEC</color>
+    <color name="card_grey" tools:ignore="MissingDefaultResource">#E4E4E4</color>
+
+
+    <color name="textColor">#666A68</color>
+    <color name="setting_title">#3A3A3A</color>
+    <color name="bgColor">#FaFaFa</color>
+    <color name="starColor">#A8A8A8</color>
+    <color name="starActiveColor">#3A8FD6</color>
+    <!-- Home screen card colors -->
+    <color name="card_1">#06B46D</color>
+    <color name="card_2">#FF8FCF</color>
+    <color name="card_3">#E9C511</color>
+    <color name="card_4">#96D1FE</color>
+    <color name="card_5">#8B97BC</color>
+    <color name="card_title_color">#028E1C</color>
+    <color name="card_desc_color">#53805B</color>
+    <color name="color_3">#E2E6FF</color>
+    <color name="popupBackgroundColor">#c6c6c6</color>
+    <color name="grey_90">#263238</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_3">#f7f7f7</color>
+
+
+</resources>

@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BanglaKeyboard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/themeColor</item>
+        <item name="colorPrimaryVariant">@color/themeColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="sidebarfont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/bansen</item>
+
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="Theme.BanglaKeyboard.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Yellow.AppCompatRatingBar" parent="Base.Widget.AppCompat.RatingBar.Indicator">
+        <item name="colorControlNormal">@color/grey_60</item>
+        <item name="colorControlActivated">@color/green_900</item>
+    </style>
+    <style name="Button.Primary" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/purple</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Button.Accent.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="Theme.BanglaKeyboard.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BanglaKeyboard.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/starColor</item>
+        <item name="colorControlActivated">@color/starActiveColor</item>
+    </style>
+    <color name="grey_60">#666666</color>
+    <color name="green_900">#1B5E20</color>
+    <color name="purple">#7409EF</color>
+    <color name="colorAccent">#FF0088</color>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="bgColor">#FaFaFa</color>
+    <color name="black">#FF000000</color>
+    <color name="btn_purpal">#ACB8FB</color>
+    <color name="card_1">#06B46D</color>
+    <color name="card_2">#FF8FCF</color>
+    <color name="card_3">#E9C511</color>
+    <color name="card_4">#96D1FE</color>
+    <color name="card_5">#8B97BC</color>
+    <color name="card_desc_color">#53805B</color>
+    <color name="card_grey" ns1:ignore="MissingDefaultResource">#E4E4E4</color>
+    <color name="card_title_color">#028E1C</color>
+    <color name="colorAccent">#FF0088</color>
+    <color name="color_3">#E2E6FF</color>
+    <color name="green">#00AE0C</color>
+    <color name="green_900">#1B5E20</color>
+    <color name="grey">#A3A3A3</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_90">#263238</color>
+    <color name="hint_color">#C5C5C5</color>
+    <color name="key_purpal">#DBE0FF</color>
+    <color name="keybord3_btn">#D2D2D2</color>
+    <color name="keybord3_btn_top">#D2D2D2</color>
+    <color name="keybord_top_text">#5A6572</color>
+    <color name="light_blue">#EEEEEE</color>
+    <color name="light_green">#87E1BC</color>
+    <color name="light_grey">#ECECEC</color>
+    <color name="newbtn_text_color">#484848</color>
+    <color name="normal_bg_keybord">#E0E9F5</color>
+    <color name="popupBackgroundColor">#c6c6c6</color>
+    <color name="purple">#7409EF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="setting_card">#FFFFFF</color>
+    <color name="setting_title">#3A3A3A</color>
+    <color name="share_btn">#6D6D6D</color>
+    <color name="starActiveColor">#3A8FD6</color>
+    <color name="starColor">#A8A8A8</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="textColor">#666A68</color>
+    <color name="themeColor">#089371</color>
+    <color name="themeColor_lighter">#DFFFE5</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Bangla Keyboard</string>
+    <string name="card_1_title">কিবোর্ড সেটিং</string>
+    <string name="card_2_title">কীবোর্ড থিম</string>
+    <string name="card_3_title">Speech To Text</string>
+    <string name="card_4_title">কিবোর্ড ফন্ট</string>
+    <string name="card_5_title">কিবোর্ড সেটিং</string>
+    <string name="center_toolbar_title">👉 বাংলা কিবোর্ড 👈</string>
+    <string name="choose_bangla_keyboard">Choose Bangla Keyboard</string>
+    <string name="close">বাতিল</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="email">support@bongappstore9.com</string>
+    <string name="enable_bangla_keyboard">Enable Bangla Keyboard</string>
+    <string name="exit">প্রস্থান করুন</string>
+    <string name="home_card_desc">এটি এই অ্যাপের প্রথম রিলিজ তাই কিছু ফিচার কম আছে। আমরা কিছুদিনের মধ্যে অটোমেটিক আপডেটের মাধ্যমে সব ফিচার যোগ করে দেব 😊</string>
+    <string name="home_card_title">ধন্যবাদ আমাদের অ্যাপ ব্যবহার করার জন্য</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="moreAppUrl">https://play.google.com/store/apps/developer?id=bongappstore9</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="play_store_url">https://play.google.com/store/apps/details?id=</string>
+    <string name="privacyPolicyUrl">http://bongappstore9.com/bangla-keyboard-bengali-typing-app/</string>
+    <string name="providefeedback">দয়া করে এখানে কিছু লিখুন</string>
+    <string name="rate5star">ফাইভ স্টার রেটিং দিন</string>
+    <string name="ratemess">প্লে স্টোরে গিয়ে আমাদের ফাইভ স্টার রেটিং দিয়ে  আমাদের বাংলা কীবোর্ড টিমকে সাপোর্ট করুন.  আপনাদের একটি ৫ স্টার আমাদের উৎসাহিত করে  আরো নতুন নতুন ফিচার যোগ করতে</string>
+    <string name="rateuspopup">Rate Us</string>
+    <string name="setting_one_bottomNote">আমাদের কিবোর্ড অ্যাপ আপনাদের কোন তথ্য কালেক্ট করেনা তাই আমাদের 100% নিরাপদ 😊</string>
+    <string name="setting_one_desc"> নিচের \"\Enable Bangla Keyboard\"\ লেখা বাটনে টাচ করে কিবোর্ড টি চালু করুন</string>
+    <string name="setting_one_desc2">বেশিরভাগ ফোনে আমাদের অ্যাপ এর নাম 👉 বাংলা কিবোর্ড 👈 এর ডান সাইডে কিবোর্ড অন করা সুইচ থাকবে সেটা সেই সুইচটি চালু করবেন </string>
+    <string name="setting_sb">কিবোর্ড সেটিং</string>
+    <string name="setting_two_desc">নিচের \"\Choose Bangla Keyboard\"\ লেখা বাটনে টাচ করে</string>
+    <string name="setting_two_desc2">ওর মধ্যে থেকে 👉বাংলা কিবোর্ড 👈 লেখা ক্লিক করুন</string>
+    <string name="share_message">আমি এই বাংলা কিবোর্ড অ্যাপ ব্যবহার করি এই কিবোর্ড অ্যাপ এ মুখে বললেই বাংলা লেখা হয়ে যায় 😎</string>
+    <string name="subtitle">বাঙ্গালীদের নিজের কিবোর্ড </string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="v_1_0">V 1.0</string>
+    <string name="websiteUrl">http://bongappstore9.com</string>
+    <string name="welcomeDialogmsg1">বাংলা কিবোর্ড সক্রিয় করা হয়েছে</string>
+    <string name="welcomeDialogmsg2">এখন আপনি আপনার টাইপিং-এর আনন্দ অনুভব করতে পারেন</string>
+    <style name="Button.Accent.Borderless" parent="@style/Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="Button.Primary" parent="@style/Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/purple</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/starColor</item>
+        <item name="colorControlActivated">@color/starActiveColor</item>
+    </style>
+    <style name="Theme.BanglaKeyboard" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        
+        <item name="colorPrimary">@color/themeColor</item>
+        <item name="colorPrimaryVariant">@color/themeColor</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.BanglaKeyboard.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.BanglaKeyboard.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.BanglaKeyboard.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Yellow.AppCompatRatingBar" parent="Base.Widget.AppCompat.RatingBar.Indicator">
+        <item name="colorControlNormal">@color/grey_60</item>
+        <item name="colorControlActivated">@color/green_900</item>
+    </style>
+    <style name="sidebarfont" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/bansen</item>
+
+        <item name="android:textSize">17sp</item>
+    </style>
+</resources>

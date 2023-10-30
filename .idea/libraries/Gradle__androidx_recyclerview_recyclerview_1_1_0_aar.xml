@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/b1c1a8ca1625732b9de9c16fbd7d7be7/transformed/recyclerview-1.1.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/b1c1a8ca1625732b9de9c16fbd7d7be7/transformed/recyclerview-1.1.0/jars/classes.jar!/" />
+      <root url="file://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/b1c1a8ca1625732b9de9c16fbd7d7be7/transformed/recyclerview-1.1.0/res" />
+      <root url="file://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/b1c1a8ca1625732b9de9c16fbd7d7be7/transformed/recyclerview-1.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.1.0/f2bdf79e1977939817f54a9d3e2f6bc52b63bdd0/recyclerview-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

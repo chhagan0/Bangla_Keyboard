@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.startup:startup-runtime:1.1.1@aar">
+    <CLASSES>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/cb02ba5f8443edc2e7949a443a6ef8c0/transformed/jetified-startup-runtime-1.1.1/jars/classes.jar!/" />
+      <root url="file://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/cb02ba5f8443edc2e7949a443a6ef8c0/transformed/jetified-startup-runtime-1.1.1/res" />
+      <root url="file://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/cb02ba5f8443edc2e7949a443a6ef8c0/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/modules-2/files-2.1/androidx.startup/startup-runtime/1.1.1/714974d4ab4858eab9395d3b048002108b62cf0a/startup-runtime-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

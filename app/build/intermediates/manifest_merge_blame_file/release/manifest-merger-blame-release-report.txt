@@ -1,0 +1,801 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bangla.keyboard.bangla.stickers"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml
+10
+11    <queries>
+11-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:6:5-10:15
+12        <intent>
+12-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:7:9-9:18
+13            <action android:name="android.intent.action.TTS_SERVICE" />
+13-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:8:13-72
+13-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:8:21-69
+14        </intent>
+15    </queries>
+16
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:12:5-79
+17-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:12:22-76
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:13:5-67
+18-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:13:22-64
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:14:5-71
+19-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:14:22-68
+20    <uses-permission android:name="android.permission.VIBRATE" />
+20-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:15:5-66
+20-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:15:22-63
+21
+22    <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+23    <permission
+23-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:7:5-9:47
+24        android:name="com.bangla.keyboard.bangla.stickers.permission.C2D_MESSAGE"
+24-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:8:9-63
+25        android:protectionLevel="signature" />
+25-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:9:9-44
+26
+27    <uses-permission android:name="com.bangla.keyboard.bangla.stickers.permission.C2D_MESSAGE" /> <!-- OneSignal SDK has runtime checks Android version. -->
+27-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:11:5-79
+27-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:11:22-76
+28    <!-- <uses-sdk tools:overrideLibrary="android.support.customtabs"/> -->
+29    <!-- Required runtime permission to display notifications on Android 13 -->
+30    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
+30-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:16:5-77
+30-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:16:22-74
+31    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+31-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:18:5-82
+31-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:18:22-79
+32    <uses-permission android:name="android.permission.WAKE_LOCK" />
+32-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:19:5-68
+32-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:19:22-65
+33    <!--
+34 Use to restore notifications the user hasn't interacted with.
+35         They could be missed notifications if the user reboots their device if this isn't in place.
+36    -->
+37    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+37-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:30:5-81
+37-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:30:22-78
+38    <!-- Samsung -->
+39    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+39-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:32:5-86
+39-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:32:22-83
+40    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+40-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:33:5-87
+40-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:33:22-84
+41    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+41-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:34:5-81
+41-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:34:22-78
+42    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+42-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:35:5-83
+42-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:35:22-80
+43    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+43-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:36:5-88
+43-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:36:22-85
+44    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+44-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:37:5-92
+44-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:37:22-89
+45    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+45-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:38:5-84
+45-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:38:22-81
+46    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+46-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:39:5-83
+46-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:39:22-80
+47    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+47-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:40:5-91
+47-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:40:22-88
+48    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+48-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:41:5-92
+48-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:41:22-89
+49    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+49-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:42:5-93
+49-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:42:22-90
+50    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+50-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:43:5-73
+50-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:43:22-70
+51    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+51-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:44:5-82
+51-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:44:22-79
+52    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+52-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:45:5-83
+52-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:45:22-80
+53    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+53-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:46:5-88
+53-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:46:22-85
+54    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" /> <!-- Permission will be merged into the manifest of the hosting app. -->
+54-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:47:5-89
+54-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:47:22-86
+55    <!-- Is required to launch foreground extraction service for targetSdkVersion 28+. -->
+56    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+56-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:13:5-77
+56-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:13:22-74
+57
+58    <application
+58-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:17:5-77:19
+59        android:name="com.bangla.keyboard.bangla.stickers.ApplicationClass"
+59-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:18:9-41
+60        android:allowBackup="true"
+60-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:19:9-35
+61        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+61-->[androidx.core:core:1.8.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\7e3b2da0855b37e4bf024e981e7b892b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+62        android:extractNativeLibs="false"
+63        android:icon="@mipmap/app_icon"
+63-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:20:9-40
+64        android:label="@string/app_name"
+64-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:21:9-41
+65        android:roundIcon="@mipmap/app_icon"
+65-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:22:9-45
+66        android:supportsRtl="true"
+66-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:23:9-35
+67        android:theme="@style/Theme.BanglaKeyboard" >
+67-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:24:9-52
+68        <activity
+68-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:26:9-28:40
+69            android:name="com.bangla.keyboard.bangla.stickers.setting.SettingActivity"
+69-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:27:13-52
+70            android:exported="false" />
+70-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:28:13-37
+71        <activity
+71-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:29:9-31:40
+72            android:name="com.bangla.keyboard.bangla.stickers.ThemeActivity"
+72-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:30:13-42
+73            android:exported="false" />
+73-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:31:13-37
+74        <activity
+74-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:32:9-34:40
+75            android:name="com.bangla.keyboard.bangla.stickers.ChooseKeyboardActivity"
+75-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:33:13-51
+76            android:exported="false" />
+76-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:34:13-37
+77        <activity
+77-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:35:9-37:40
+78            android:name="com.bangla.keyboard.bangla.stickers.setting.RateUsActivity"
+78-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:36:13-51
+79            android:exported="false" />
+79-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:37:13-37
+80        <activity
+80-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:38:9-40:40
+81            android:name="com.bangla.keyboard.bangla.stickers.EnableKeyboardActivity"
+81-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:39:13-51
+82            android:exported="false" />
+82-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:40:13-37
+83        <activity
+83-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:41:9-49:20
+84            android:name="com.bangla.keyboard.bangla.stickers.SplashActivity"
+84-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:42:13-43
+85            android:exported="true" >
+85-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:43:13-36
+86            <intent-filter>
+86-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:44:13-48:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:45:17-69
+87-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:45:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:47:17-77
+89-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:47:27-74
+90            </intent-filter>
+91        </activity>
+92        <activity
+92-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:50:9-52:40
+93            android:name="com.bangla.keyboard.bangla.stickers.MainActivity"
+93-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:51:13-41
+94            android:exported="false" />
+94-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:52:13-37
+95
+96        <service android:name="com.bangla.keyboard.bangla.stickers.Speech" />
+96-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:54:9-43
+96-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:54:18-40
+97        <service
+97-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:55:9-67:19
+98            android:name="com.bangla.keyboard.bangla.stickers.Keyboard"
+98-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:56:13-37
+99            android:exported="true"
+99-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:57:13-36
+100            android:label="@string/center_toolbar_title"
+100-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:58:13-57
+101            android:permission="android.permission.BIND_INPUT_METHOD" >
+101-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:59:13-70
+102            <meta-data
+102-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:60:13-62:50
+103                android:name="android.view.im"
+103-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:61:17-47
+104                android:resource="@xml/method" />
+104-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:62:17-47
+105
+106            <intent-filter>
+106-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:64:13-66:29
+107                <action android:name="android.view.InputMethod" />
+107-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:65:17-67
+107-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:65:25-64
+108            </intent-filter>
+109        </service>
+110
+111        <provider
+111-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:68:9-76:20
+112            android:name="androidx.core.content.FileProvider"
+112-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:69:13-62
+113            android:authorities="com.bangla.keyboard.bangla.stickers.provider"
+113-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:70:13-79
+114            android:exported="false"
+114-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:71:13-37
+115            android:grantUriPermissions="true" >
+115-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:72:13-47
+116            <meta-data
+116-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:73:13-75:54
+117                android:name="android.support.FILE_PROVIDER_PATHS"
+117-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:74:17-67
+118                android:resource="@xml/file_paths" />
+118-->E:\BengaliKeyboard\app\src\main\AndroidManifest.xml:75:17-51
+119        </provider>
+120
+121        <receiver
+121-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:50:9-61:20
+122            android:name="com.onesignal.FCMBroadcastReceiver"
+122-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:51:13-62
+123            android:exported="true"
+123-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:52:13-36
+124            android:permission="com.google.android.c2dm.permission.SEND" >
+124-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:53:13-73
+125
+126            <!-- High priority so OneSignal payloads can be filtered from other FCM receivers -->
+127            <intent-filter android:priority="999" >
+127-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:56:13-60:29
+127-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:56:28-50
+128                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+128-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:57:17-81
+128-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:57:25-78
+129
+130                <category android:name="com.bangla.keyboard.bangla.stickers" />
+130-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:59:17-61
+130-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:59:27-58
+131            </intent-filter>
+132        </receiver>
+133
+134        <service
+134-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:63:9-69:19
+135            android:name="com.onesignal.HmsMessageServiceOneSignal"
+135-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:64:13-68
+136            android:exported="false" >
+136-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:65:13-37
+137            <intent-filter>
+137-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:66:13-68:29
+138                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+138-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:67:17-81
+138-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:67:25-78
+139            </intent-filter>
+140        </service>
+141
+142        <activity
+142-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:71:9-79:20
+143            android:name="com.onesignal.NotificationOpenedActivityHMS"
+143-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:72:13-71
+144            android:exported="true"
+144-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:73:13-36
+145            android:noHistory="true"
+145-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:74:13-37
+146            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+146-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:75:13-72
+147            <intent-filter>
+147-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:76:13-78:29
+148                <action android:name="android.intent.action.VIEW" />
+148-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:77:17-69
+148-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:77:25-66
+149            </intent-filter>
+150        </activity>
+151
+152        <service
+152-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:81:9-83:40
+153            android:name="com.onesignal.FCMIntentService"
+153-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:82:13-58
+154            android:exported="false" />
+154-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:83:13-37
+155        <service
+155-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:84:9-87:72
+156            android:name="com.onesignal.FCMIntentJobService"
+156-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:85:13-61
+157            android:exported="false"
+157-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:86:13-37
+158            android:permission="android.permission.BIND_JOB_SERVICE" />
+158-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:87:13-69
+159        <service
+159-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:88:9-91:43
+160            android:name="com.onesignal.SyncService"
+160-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:89:13-53
+161            android:exported="false"
+161-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:90:13-37
+162            android:stopWithTask="true" />
+162-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:91:13-40
+163        <service
+163-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:92:9-95:72
+164            android:name="com.onesignal.SyncJobService"
+164-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:93:13-56
+165            android:exported="false"
+165-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:94:13-37
+166            android:permission="android.permission.BIND_JOB_SERVICE" />
+166-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:95:13-69
+167
+168        <activity
+168-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:97:9-100:75
+169            android:name="com.onesignal.PermissionsActivity"
+169-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:98:13-61
+170            android:exported="false"
+170-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:99:13-37
+171            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+171-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:100:13-72
+172
+173        <receiver
+173-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:102:9-104:39
+174            android:name="com.onesignal.NotificationDismissReceiver"
+174-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:103:13-69
+175            android:exported="true" />
+175-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:104:13-36
+176        <receiver
+176-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:105:9-112:20
+177            android:name="com.onesignal.BootUpReceiver"
+177-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:106:13-56
+178            android:exported="true" >
+178-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:107:13-36
+179            <intent-filter>
+179-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:108:13-111:29
+180                <action android:name="android.intent.action.BOOT_COMPLETED" />
+180-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:109:17-79
+180-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:109:25-76
+181                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+181-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:110:17-82
+181-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:110:25-79
+182            </intent-filter>
+183        </receiver>
+184        <receiver
+184-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:113:9-119:20
+185            android:name="com.onesignal.UpgradeReceiver"
+185-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:114:13-57
+186            android:exported="true" >
+186-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:115:13-36
+187            <intent-filter>
+187-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:116:13-118:29
+188                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+188-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:117:17-84
+188-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:117:25-81
+189            </intent-filter>
+190        </receiver>
+191
+192        <activity
+192-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:121:9-127:75
+193            android:name="com.onesignal.NotificationOpenedReceiver"
+193-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:122:13-68
+194            android:excludeFromRecents="true"
+194-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:123:13-46
+195            android:exported="true"
+195-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:124:13-36
+196            android:noHistory="true"
+196-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:125:13-37
+197            android:taskAffinity=""
+197-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:126:13-36
+198            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+198-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:127:13-72
+199        <activity
+199-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:128:9-133:75
+200            android:name="com.onesignal.NotificationOpenedReceiverAndroid22AndOlder"
+200-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:129:13-85
+201            android:excludeFromRecents="true"
+201-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:130:13-46
+202            android:exported="true"
+202-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:131:13-36
+203            android:noHistory="true"
+203-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:132:13-37
+204            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+204-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:133:13-72
+205        <activity
+205-->[com.google.android.gms:play-services-base:17.6.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\f549cac4950dc61d521f82659eecbf71\transformed\jetified-play-services-base-17.6.0\AndroidManifest.xml:23:9-26:75
+206            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+206-->[com.google.android.gms:play-services-base:17.6.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\f549cac4950dc61d521f82659eecbf71\transformed\jetified-play-services-base-17.6.0\AndroidManifest.xml:24:13-79
+207            android:exported="false"
+207-->[com.google.android.gms:play-services-base:17.6.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\f549cac4950dc61d521f82659eecbf71\transformed\jetified-play-services-base-17.6.0\AndroidManifest.xml:25:13-37
+208            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+208-->[com.google.android.gms:play-services-base:17.6.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\f549cac4950dc61d521f82659eecbf71\transformed\jetified-play-services-base-17.6.0\AndroidManifest.xml:26:13-72
+209
+210        <receiver
+210-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:28:9-35:20
+211            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+211-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:29:13-78
+212            android:exported="true"
+212-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:30:13-36
+213            android:permission="com.google.android.c2dm.permission.SEND" >
+213-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:31:13-73
+214            <intent-filter>
+214-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:32:13-34:29
+215                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+215-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:57:17-81
+215-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:57:25-78
+216            </intent-filter>
+217        </receiver>
+218        <!--
+219             FirebaseMessagingService performs security checks at runtime,
+220             but set to not exported to explicitly avoid allowing another app to call it.
+221        -->
+222        <service
+222-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:41:9-48:19
+223            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+223-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:42:13-82
+224            android:directBootAware="true"
+224-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:43:13-43
+225            android:exported="false" >
+225-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
+226            <intent-filter android:priority="-500" >
+226-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:45:13-47:29
+226-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:45:28-51
+227                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+227-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:46:17-78
+227-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:46:25-75
+228            </intent-filter>
+229        </service>
+230        <service
+230-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:49:9-55:19
+231            android:name="com.google.firebase.components.ComponentDiscoveryService"
+231-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:50:13-84
+232            android:directBootAware="true"
+232-->[com.google.firebase:firebase-common:20.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\fd0dc58ae26c3e13a02294aac6f087f0\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+233            android:exported="false" >
+233-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:51:13-37
+234            <meta-data
+234-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:52:13-54:85
+235                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+235-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:53:17-119
+236                android:value="com.google.firebase.components.ComponentRegistrar" />
+236-->[com.google.firebase:firebase-messaging:23.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\adf178ef9660ac8997835b6c94d3e88d\transformed\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:54:17-82
+237            <meta-data
+237-->[com.google.firebase:firebase-datatransport:18.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\a2d7a4ab00606a7b51d57a7a6c44cf6f\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+238                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+238-->[com.google.firebase:firebase-datatransport:18.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\a2d7a4ab00606a7b51d57a7a6c44cf6f\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+239                android:value="com.google.firebase.components.ComponentRegistrar" />
+239-->[com.google.firebase:firebase-datatransport:18.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\a2d7a4ab00606a7b51d57a7a6c44cf6f\transformed\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+240            <meta-data
+240-->[com.google.firebase:firebase-installations:17.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\581dfc7245e453fcb603f8cc0eab87ca\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+241                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+241-->[com.google.firebase:firebase-installations:17.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\581dfc7245e453fcb603f8cc0eab87ca\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+242                android:value="com.google.firebase.components.ComponentRegistrar" />
+242-->[com.google.firebase:firebase-installations:17.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\581dfc7245e453fcb603f8cc0eab87ca\transformed\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+243        </service>
+244
+245        <provider
+245-->[com.google.firebase:firebase-common:20.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\fd0dc58ae26c3e13a02294aac6f087f0\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+246            android:name="com.google.firebase.provider.FirebaseInitProvider"
+246-->[com.google.firebase:firebase-common:20.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\fd0dc58ae26c3e13a02294aac6f087f0\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+247            android:authorities="com.bangla.keyboard.bangla.stickers.firebaseinitprovider"
+247-->[com.google.firebase:firebase-common:20.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\fd0dc58ae26c3e13a02294aac6f087f0\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+248            android:directBootAware="true"
+248-->[com.google.firebase:firebase-common:20.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\fd0dc58ae26c3e13a02294aac6f087f0\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+249            android:exported="false"
+249-->[com.google.firebase:firebase-common:20.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\fd0dc58ae26c3e13a02294aac6f087f0\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+250            android:initOrder="100" />
+250-->[com.google.firebase:firebase-common:20.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\fd0dc58ae26c3e13a02294aac6f087f0\transformed\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+251
+252        <meta-data
+252-->[com.google.android.gms:play-services-basement:17.6.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\4ded17e7cac79d833f910389c47fbcd9\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:23:9-25:69
+253            android:name="com.google.android.gms.version"
+253-->[com.google.android.gms:play-services-basement:17.6.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\4ded17e7cac79d833f910389c47fbcd9\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:24:13-58
+254            android:value="@integer/google_play_services_version" />
+254-->[com.google.android.gms:play-services-basement:17.6.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\4ded17e7cac79d833f910389c47fbcd9\transformed\jetified-play-services-basement-17.6.0\AndroidManifest.xml:25:13-66
+255
+256        <uses-library
+256-->[androidx.window:window:1.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\aea965748e8ef15f8c57ba50cbae604d\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+257            android:name="androidx.window.extensions"
+257-->[androidx.window:window:1.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\aea965748e8ef15f8c57ba50cbae604d\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+258            android:required="false" />
+258-->[androidx.window:window:1.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\aea965748e8ef15f8c57ba50cbae604d\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+259        <uses-library
+259-->[androidx.window:window:1.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\aea965748e8ef15f8c57ba50cbae604d\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+260            android:name="androidx.window.sidecar"
+260-->[androidx.window:window:1.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\aea965748e8ef15f8c57ba50cbae604d\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+261            android:required="false" />
+261-->[androidx.window:window:1.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\aea965748e8ef15f8c57ba50cbae604d\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+262
+263        <activity
+263-->[com.nabinbhandari.android:permissions:3.8] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\2195ca1675e77663aa39bda3bf973eed\transformed\jetified-permissions-3.8\AndroidManifest.xml:12:9-14:67
+264            android:name="com.nabinbhandari.android.permissions.PermissionsActivity"
+264-->[com.nabinbhandari.android:permissions:3.8] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\2195ca1675e77663aa39bda3bf973eed\transformed\jetified-permissions-3.8\AndroidManifest.xml:13:13-85
+265            android:theme="@style/Permissions.TransparentTheme" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+265-->[com.nabinbhandari.android:permissions:3.8] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\2195ca1675e77663aa39bda3bf973eed\transformed\jetified-permissions-3.8\AndroidManifest.xml:14:13-64
+266        <activity
+266-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:18:9-24:45
+267            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+267-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:19:13-100
+268            android:enabled="false"
+268-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:20:13-36
+269            android:exported="false"
+269-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:21:13-37
+270            android:launchMode="singleInstance"
+270-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:22:13-48
+271            android:process=":playcore_missing_splits_activity"
+271-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:23:13-64
+272            android:stateNotNeeded="true" />
+272-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:24:13-42
+273        <activity
+273-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:25:9-29:65
+274            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+274-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:26:13-93
+275            android:exported="false"
+275-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:27:13-37
+276            android:stateNotNeeded="true"
+276-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:28:13-42
+277            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+277-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:29:13-62
+278        <service
+278-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:32:9-39:19
+279            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+279-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:33:13-94
+280            android:enabled="false"
+280-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:34:13-36
+281            android:exported="true" >
+281-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:35:13-36
+282            <meta-data
+282-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:36:13-38:41
+283                android:name="com.google.android.play.core.assetpacks.versionCode"
+283-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:37:17-83
+284                android:value="11003" />
+284-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:38:17-38
+285        </service>
+286        <service
+286-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:40:9-43:40
+287            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+287-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:41:13-95
+288            android:enabled="false"
+288-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:42:13-36
+289            android:exported="false" />
+289-->[com.google.android.play:core:1.10.3] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\629480a6f996dd913adebddcbbdff39e\transformed\jetified-core-1.10.3\AndroidManifest.xml:43:13-37
+290
+291        <provider
+291-->[androidx.emoji2:emoji2:1.2.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\caaf9f8a8b8bebca0100ca47f7194758\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+292            android:name="androidx.startup.InitializationProvider"
+292-->[androidx.emoji2:emoji2:1.2.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\caaf9f8a8b8bebca0100ca47f7194758\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+293            android:authorities="com.bangla.keyboard.bangla.stickers.androidx-startup"
+293-->[androidx.emoji2:emoji2:1.2.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\caaf9f8a8b8bebca0100ca47f7194758\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+294            android:exported="false" >
+294-->[androidx.emoji2:emoji2:1.2.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\caaf9f8a8b8bebca0100ca47f7194758\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+295            <meta-data
+295-->[androidx.emoji2:emoji2:1.2.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\caaf9f8a8b8bebca0100ca47f7194758\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+296                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+296-->[androidx.emoji2:emoji2:1.2.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\caaf9f8a8b8bebca0100ca47f7194758\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+297                android:value="androidx.startup" />
+297-->[androidx.emoji2:emoji2:1.2.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\caaf9f8a8b8bebca0100ca47f7194758\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+298            <meta-data
+298-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:36:13-38:52
+299                android:name="androidx.work.WorkManagerInitializer"
+299-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:37:17-68
+300                android:value="androidx.startup" />
+300-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:38:17-49
+301            <meta-data
+301-->[androidx.lifecycle:lifecycle-process:2.4.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\4d0781f3bf3f8f342c9def73d08072ef\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+302                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+302-->[androidx.lifecycle:lifecycle-process:2.4.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\4d0781f3bf3f8f342c9def73d08072ef\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+303                android:value="androidx.startup" />
+303-->[androidx.lifecycle:lifecycle-process:2.4.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\4d0781f3bf3f8f342c9def73d08072ef\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+304        </provider>
+305
+306        <service
+306-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:41:9-46:35
+307            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+307-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:42:13-88
+308            android:directBootAware="false"
+308-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:43:13-44
+309            android:enabled="@bool/enable_system_alarm_service_default"
+309-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:44:13-72
+310            android:exported="false" />
+310-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:45:13-37
+311        <service
+311-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:47:9-53:35
+312            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+312-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:48:13-84
+313            android:directBootAware="false"
+313-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:49:13-44
+314            android:enabled="@bool/enable_system_job_service_default"
+314-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:50:13-70
+315            android:exported="true"
+315-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:51:13-36
+316            android:permission="android.permission.BIND_JOB_SERVICE" />
+316-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:52:13-69
+317        <service
+317-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:54:9-59:35
+318            android:name="androidx.work.impl.foreground.SystemForegroundService"
+318-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:55:13-81
+319            android:directBootAware="false"
+319-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:56:13-44
+320            android:enabled="@bool/enable_system_foreground_service_default"
+320-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:57:13-77
+321            android:exported="false" />
+321-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:58:13-37
+322
+323        <receiver
+323-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:61:9-66:35
+324            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+324-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:62:13-88
+325            android:directBootAware="false"
+325-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:63:13-44
+326            android:enabled="true"
+326-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:64:13-35
+327            android:exported="false" />
+327-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:65:13-37
+328        <receiver
+328-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:67:9-77:20
+329            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+329-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:68:13-106
+330            android:directBootAware="false"
+330-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:69:13-44
+331            android:enabled="false"
+331-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:70:13-36
+332            android:exported="false" >
+332-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:71:13-37
+333            <intent-filter>
+333-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:73:13-76:29
+334                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+334-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:17-87
+334-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:74:25-84
+335                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+335-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:17-90
+335-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:75:25-87
+336            </intent-filter>
+337        </receiver>
+338        <receiver
+338-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:78:9-88:20
+339            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+339-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:79:13-104
+340            android:directBootAware="false"
+340-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:80:13-44
+341            android:enabled="false"
+341-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:81:13-36
+342            android:exported="false" >
+342-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:82:13-37
+343            <intent-filter>
+343-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:84:13-87:29
+344                <action android:name="android.intent.action.BATTERY_OKAY" />
+344-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:17-77
+344-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:85:25-74
+345                <action android:name="android.intent.action.BATTERY_LOW" />
+345-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:17-76
+345-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:86:25-73
+346            </intent-filter>
+347        </receiver>
+348        <receiver
+348-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:89:9-99:20
+349            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+349-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:90:13-104
+350            android:directBootAware="false"
+350-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:91:13-44
+351            android:enabled="false"
+351-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:92:13-36
+352            android:exported="false" >
+352-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:93:13-37
+353            <intent-filter>
+353-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:95:13-98:29
+354                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+354-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:17-83
+354-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:96:25-80
+355                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+355-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:17-82
+355-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:97:25-79
+356            </intent-filter>
+357        </receiver>
+358        <receiver
+358-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:100:9-109:20
+359            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+359-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:101:13-103
+360            android:directBootAware="false"
+360-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:102:13-44
+361            android:enabled="false"
+361-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:103:13-36
+362            android:exported="false" >
+362-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:104:13-37
+363            <intent-filter>
+363-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:106:13-108:29
+364                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+364-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:17-79
+364-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:107:25-76
+365            </intent-filter>
+366        </receiver>
+367        <receiver
+367-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:110:9-121:20
+368            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+368-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:111:13-88
+369            android:directBootAware="false"
+369-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:112:13-44
+370            android:enabled="false"
+370-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:113:13-36
+371            android:exported="false" >
+371-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:114:13-37
+372            <intent-filter>
+372-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:116:13-120:29
+373                <action android:name="android.intent.action.BOOT_COMPLETED" />
+373-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:109:17-79
+373-->[com.onesignal:OneSignal:4.8.6] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\3e00723834116a0ed49c931ea6a982fa\transformed\jetified-OneSignal-4.8.6\AndroidManifest.xml:109:25-76
+374                <action android:name="android.intent.action.TIME_SET" />
+374-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:17-73
+374-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:118:25-70
+375                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+375-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:17-81
+375-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:119:25-78
+376            </intent-filter>
+377        </receiver>
+378        <receiver
+378-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:122:9-131:20
+379            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+379-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:123:13-99
+380            android:directBootAware="false"
+380-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:124:13-44
+381            android:enabled="@bool/enable_system_alarm_service_default"
+381-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:125:13-72
+382            android:exported="false" >
+382-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:126:13-37
+383            <intent-filter>
+383-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:128:13-130:29
+384                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+384-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:17-98
+384-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:129:25-95
+385            </intent-filter>
+386        </receiver>
+387        <receiver
+387-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:132:9-142:20
+388            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+388-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:133:13-78
+389            android:directBootAware="false"
+389-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:134:13-44
+390            android:enabled="true"
+390-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:135:13-35
+391            android:exported="true"
+391-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:136:13-36
+392            android:permission="android.permission.DUMP" >
+392-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:137:13-57
+393            <intent-filter>
+393-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:139:13-141:29
+394                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+394-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:17-88
+394-->[androidx.work:work-runtime:2.7.1] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\44c5614d451a0a95ec9dfb71793447db\transformed\work-runtime-2.7.1\AndroidManifest.xml:140:25-85
+395            </intent-filter>
+396        </receiver>
+397
+398        <service
+398-->[androidx.room:room-runtime:2.2.5] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\a2aa840b59cb8b2cfe294593c8332115\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+399            android:name="androidx.room.MultiInstanceInvalidationService"
+399-->[androidx.room:room-runtime:2.2.5] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\a2aa840b59cb8b2cfe294593c8332115\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+400            android:directBootAware="true"
+400-->[androidx.room:room-runtime:2.2.5] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\a2aa840b59cb8b2cfe294593c8332115\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+401            android:exported="false" />
+401-->[androidx.room:room-runtime:2.2.5] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\a2aa840b59cb8b2cfe294593c8332115\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+402        <service
+402-->[com.google.android.datatransport:transport-backend-cct:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\642181fa6a6f6dc3fabb8b261550717c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+403            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+403-->[com.google.android.datatransport:transport-backend-cct:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\642181fa6a6f6dc3fabb8b261550717c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+404            android:exported="false" >
+404-->[com.google.android.datatransport:transport-backend-cct:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\642181fa6a6f6dc3fabb8b261550717c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+405            <meta-data
+405-->[com.google.android.datatransport:transport-backend-cct:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\642181fa6a6f6dc3fabb8b261550717c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+406                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+406-->[com.google.android.datatransport:transport-backend-cct:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\642181fa6a6f6dc3fabb8b261550717c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+407                android:value="cct" />
+407-->[com.google.android.datatransport:transport-backend-cct:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\642181fa6a6f6dc3fabb8b261550717c\transformed\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+408        </service>
+409        <service
+409-->[com.google.android.datatransport:transport-runtime:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\09919ec20de21bd6b7d2d4360bff3032\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+410            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+410-->[com.google.android.datatransport:transport-runtime:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\09919ec20de21bd6b7d2d4360bff3032\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+411            android:exported="false"
+411-->[com.google.android.datatransport:transport-runtime:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\09919ec20de21bd6b7d2d4360bff3032\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+412            android:permission="android.permission.BIND_JOB_SERVICE" >
+412-->[com.google.android.datatransport:transport-runtime:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\09919ec20de21bd6b7d2d4360bff3032\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+413        </service>
+414
+415        <receiver
+415-->[com.google.android.datatransport:transport-runtime:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\09919ec20de21bd6b7d2d4360bff3032\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+416            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+416-->[com.google.android.datatransport:transport-runtime:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\09919ec20de21bd6b7d2d4360bff3032\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+417            android:exported="false" />
+417-->[com.google.android.datatransport:transport-runtime:3.0.0] D:\codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter\AllStatusSaver\caches\transforms-3\09919ec20de21bd6b7d2d4360bff3032\transformed\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+418    </application>
+419
+420</manifest>

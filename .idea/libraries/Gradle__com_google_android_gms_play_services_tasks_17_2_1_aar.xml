@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-tasks:17.2.1@aar">
+    <CLASSES>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/883de10acafd3c2fb6fad60f1a631112/transformed/jetified-play-services-tasks-17.2.1/jars/classes.jar!/" />
+      <root url="file://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/883de10acafd3c2fb6fad60f1a631112/transformed/jetified-play-services-tasks-17.2.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/modules-2/files-2.1/com.google.android.gms/play-services-tasks/17.2.1/ef19d8e16a762897c399d10edef4ef3772200155/play-services-tasks-17.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

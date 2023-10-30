@@ -1,0 +1,50 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Bangla Keyboard</string>
+    <string name="subtitle">বাঙ্গালীদের নিজের কিবোর্ড </string>
+    <string name="v_1_0">V 1.0</string>
+    <string name="center_toolbar_title">👉 বাংলা কিবোর্ড 👈</string>
+    <string name="setting_one_desc"> নিচের \"\Enable Bangla Keyboard\"\ লেখা বাটনে টাচ করে কিবোর্ড টি চালু করুন</string>
+    <string name="setting_one_desc2">বেশিরভাগ ফোনে আমাদের অ্যাপ এর নাম 👉 বাংলা কিবোর্ড 👈 এর ডান সাইডে কিবোর্ড অন করা সুইচ থাকবে সেটা সেই সুইচটি চালু করবেন </string>
+    <string name="enable_bangla_keyboard">Enable Bangla Keyboard</string>
+    <string name="setting_one_bottomNote">আমাদের কিবোর্ড অ্যাপ আপনাদের কোন তথ্য কালেক্ট করেনা তাই আমাদের 100% নিরাপদ 😊</string>
+
+    <string name="setting_two_desc">নিচের \"\Choose Bangla Keyboard\"\ লেখা বাটনে টাচ করে</string>
+    <string name="setting_two_desc2">ওর মধ্যে থেকে 👉বাংলা কিবোর্ড 👈 লেখা ক্লিক করুন</string>
+    <string name="welcomeDialogmsg1">বাংলা কিবোর্ড সক্রিয় করা হয়েছে</string>
+    <string name="welcomeDialogmsg2">এখন আপনি আপনার টাইপিং-এর আনন্দ অনুভব করতে পারেন</string>
+    <string name="choose_bangla_keyboard">Choose Bangla Keyboard</string>
+    <string name="card_1_title">কিবোর্ড সেটিং</string>
+    <string name="card_2_title">কীবোর্ড থিম</string>
+    <string name="card_3_title">Speech To Text</string>
+    <string name="card_4_title">কিবোর্ড ফন্ট</string>
+    <string name="card_5_title">কিবোর্ড সেটিং</string>
+    <string name="setting_sb">কিবোর্ড সেটিং</string>
+    <string name="home_card_desc">এটি এই অ্যাপের প্রথম রিলিজ তাই কিছু ফিচার কম আছে। আমরা কিছুদিনের মধ্যে অটোমেটিক আপডেটের মাধ্যমে সব ফিচার যোগ করে দেব 😊</string>
+    <string name="home_card_title">ধন্যবাদ আমাদের অ্যাপ ব্যবহার করার জন্য</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="privacyPolicyUrl">http://bongappstore9.com/bangla-keyboard-bengali-typing-app/</string>
+    <string name="websiteUrl">http://bongappstore9.com</string>
+    <string name="moreAppUrl">https://play.google.com/store/apps/developer?id=bongappstore9</string>
+    <string name="rate5star">ফাইভ স্টার রেটিং দিন</string>
+    <string name="ratemess">প্লে স্টোরে গিয়ে আমাদের ফাইভ স্টার রেটিং দিয়ে  আমাদের বাংলা কীবোর্ড টিমকে সাপোর্ট করুন.  আপনাদের একটি ৫ স্টার আমাদের উৎসাহিত করে  আরো নতুন নতুন ফিচার যোগ করতে</string>
+    <string name="providefeedback">দয়া করে এখানে কিছু লিখুন</string>
+    <string name="rateuspopup">Rate Us</string>
+    <string name="close">বাতিল</string>
+    <string name="exit">প্রস্থান করুন</string>
+    <string name="email">support@bongappstore9.com</string>
+    <string name="share_message">আমি এই বাংলা কিবোর্ড অ্যাপ ব্যবহার করি এই কিবোর্ড অ্যাপ এ মুখে বললেই বাংলা লেখা হয়ে যায় 😎</string>
+    <string name="play_store_url">https://play.google.com/store/apps/details?id=</string>
+</resources>

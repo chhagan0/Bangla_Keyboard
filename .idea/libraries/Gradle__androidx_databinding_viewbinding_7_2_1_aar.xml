@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.databinding:viewbinding:7.2.1@aar">
+    <CLASSES>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/ce9a1c7c255e3e6a073e5883cef322f3/transformed/jetified-viewbinding-7.2.1/jars/classes.jar!/" />
+      <root url="file://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/ce9a1c7c255e3e6a073e5883cef322f3/transformed/jetified-viewbinding-7.2.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/modules-2/files-2.1/androidx.databinding/viewbinding/7.2.1/eb67a946aa3c6c8b1aefd1458d67089c2a3fdb/viewbinding-7.2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

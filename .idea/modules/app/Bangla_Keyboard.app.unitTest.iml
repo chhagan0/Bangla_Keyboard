@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":app:unitTest" external.linked.project.path="$MODULE_DIR$/../../../app" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="5" platform="JVM 1.8" allPlatforms="JVM [1.8]" useProjectSettings="false">
+        <additionalVisibleModuleNames>:app:main</additionalVisibleModuleNames>
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xallow-no-source-files" />
+        </compilerSettings>
+        <compilerArguments>
+          <flagArguments>
+            <flagArg name="noReflect" arg="true" />
+            <flagArg name="noStdlib" arg="true" />
+          </flagArguments>
+          <stringArguments>
+            <stringArg name="classpath">
+              <args>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/release/R.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/ec6352dd2d2af073fdf506ef8cf026e5/transformed/jetified-viewbinding-7.2.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/1c906cb40db0b01eaf1f051950050f75/transformed/navigation-fragment-2.5.3-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/4210df1ac098039b467c1f22930a0639/transformed/jetified-fragment-ktx-1.5.4-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/949cb55681e242937d5e2380dadcb194/transformed/navigation-ui-2.5.3-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/990af76ed744746007908c110232988c/transformed/navigation-runtime-2.5.3-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/4a2adebf878ecc7356afef15aa9580b6/transformed/jetified-activity-ktx-1.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/15cb85ba9654de224637ef542dc03843/transformed/navigation-common-2.5.3-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/0e7af5b631c463a33d1280c52295b8bb/transformed/jetified-lifecycle-viewmodel-ktx-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/4c68b22450ad702f5ede85c472f2d58f/transformed/material-1.7.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/f312033d0f80a5442d58ee0341286578/transformed/jetified-OneSignal-4.8.6-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/7d0f0d41f49a7032c372bfa487c8b286/transformed/appcompat-1.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/e8b18ecc2d4cae29ee3bbf54eb2b56a9/transformed/jetified-viewpager2-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/0a426e39d706b71a7e3797fa29a8f6b7/transformed/legacy-support-v4-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/db536c34910bccdd73db311070bbbf5d/transformed/jetified-firebase-messaging-23.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/53641da41474e97b6c7f6a4fc1b4ac3b/transformed/jetified-play-services-cloud-messaging-17.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/0fc20628058fd36853600547e5592ab3/transformed/jetified-play-services-stats-17.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/bb6b628ef98a0c349d26f2682ab9e0af/transformed/jetified-firebase-datatransport-18.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/6403debd19cd2596d28f10185e734907/transformed/jetified-firebase-installations-17.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/68aa9c5e61b0d3e1b5917ba2037642db/transformed/jetified-firebase-common-20.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/52a2543a59edbe33d4e80a6863cd9436/transformed/jetified-firebase-iid-interop-17.1.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/17829f69e5ced77cbe160b1ef6897e8d/transformed/jetified-firebase-installations-interop-17.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/23bc40dedf45e9c897751bc94a43616d/transformed/jetified-play-services-tasks-17.2.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/b102dfc4eaba7c4848e47b1a029be81d/transformed/jetified-firebase-measurement-connector-19.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/394bb65475a0ba7c1c07d6f02d8fd380/transformed/jetified-play-services-basement-17.6.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/09050cff566399b43e01e84a8ef5bc14/transformed/fragment-1.5.4-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/873a4f2ae78cbf7275dce114ecfac033/transformed/jetified-activity-1.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/77f321e304dc6fea56078dd38a5d9751/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/4e7efeba22bcc56ef6a72d27b4615439/transformed/jetified-lifecycle-livedata-ktx-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/e522e0b0b244ae2537186321f137d992/transformed/jetified-kotlinx-coroutines-core-jvm-1.6.1.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/3689f200f08547bb60994e8abe1ba937/transformed/jetified-lifecycle-runtime-ktx-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/6264d13de5eca9bdd1b7f9f3fa70c7a9/transformed/jetified-kotlinx-coroutines-android-1.6.1.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/60053b0d51fb1be1d83938ae82c58361/transformed/jetified-kotlin-stdlib-jdk8-1.8.20.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/0d0475ae971cf2bdc6638c80785070ce/transformed/constraintlayout-2.1.4-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/ab5315afd5a2f0957808d85f7d46dcbe/transformed/jetified-permissions-3.8-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/025ac74f3c971e040ee3006ce48c4921/transformed/jetified-emoji-java-4.0.0.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/24f805f7e0e5723d508c4505302348c2/transformed/jetified-core-1.10.3-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/759f44c5b745590f672a18addf14419e/transformed/jetified-lottie-5.2.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/a4776023c4ddd18f8c4d63d8380c5eda/transformed/jetified-junit-4.13.2.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/b9c029a0a3a26802ad8e98f352170050/transformed/jetified-hamcrest-core-1.3.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/2de86bfb0bbab2b669b1633e913a8584/transformed/jetified-appcompat-resources-1.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/a0c12e87451f2ef9c8d0440fa2ff7b11/transformed/legacy-support-core-ui-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/0fb96de84deb00e320ea4a72cf3bdb19/transformed/drawerlayout-1.1.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/23a00f887230eb1266dee133ea4de836/transformed/coordinatorlayout-1.1.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/e69b1f659bac38adaed6fa402539a015/transformed/dynamicanimation-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/64a9e223d23c4716b5fa121a070de49a/transformed/recyclerview-1.1.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/b963c8cf7cc2d7230007c0a83ef5b11b/transformed/transition-1.4.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/266823482a6e2108250b948cbe59c5cb/transformed/vectordrawable-animated-1.1.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/08f97f23e715e87853f19307edf25df2/transformed/vectordrawable-1.1.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/0b67fcca78a4ce8a273128bac8ca08e5/transformed/slidingpanelayout-1.2.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/10b7bc051d20acb576b42adf828e38f7/transformed/viewpager-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/307f0c2134edced50758b0163f8d510c/transformed/customview-1.1.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/7bbd84d1bf1ab2bde3acd835bf2e3d7f/transformed/browser-1.3.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/9d0e051380ea0e00b58c6f35d0892491/transformed/jetified-core-ktx-1.8.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/5b7c9db1074ce3670fb0e98779b02923/transformed/legacy-support-core-utils-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/50ee9da5ca617670dd24b07ca840773b/transformed/loader-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/835fefa0248b0071f15c52409f8cb639/transformed/media-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/74398d08f2a5cdee98db97e964d9955d/transformed/swiperefreshlayout-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/48dc3c1df2dc17f899fb42b43035a7c0/transformed/asynclayoutinflater-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/2711ea32f9d79017d739f8023e308e0f/transformed/core-1.8.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/05377bc1b200d3208d8c21508687dbca/transformed/cursoradapter-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/0f6cd5dfe938caea1380c814eed6c5e6/transformed/jetified-savedstate-ktx-1.2.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/c1556b4f2ad5f518d941ee69c89c1157/transformed/jetified-savedstate-1.2.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/f81d4a2c7710f270e2a058b2828bad83/transformed/cardview-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/fe4345001973efe232d6cd4eb7d07217/transformed/lifecycle-runtime-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/e5f8da3fe4e57db21a7d0da984f81cee/transformed/lifecycle-viewmodel-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/d29edd26b27abc508700644c275386d5/transformed/versionedparcelable-1.1.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/db9b2fdd3c5241089585ad64ca5456ff/transformed/jetified-collection-ktx-1.1.0.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/modules-2/files-2.1/androidx.collection/collection/1.1.0/1f27220b47669781457de0d600849a5de0e89909/collection-1.1.0.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/8f5de9416be51ae782bca271fe5666cf/transformed/work-runtime-2.7.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/3936dda2da84d1a7b7b2e3e087c1913f/transformed/lifecycle-livedata-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/a18178ca4a6905cb03f6c44113ecccc5/transformed/core-runtime-2.1.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/modules-2/files-2.1/androidx.arch.core/core-common/2.1.0/b3152fc64428c9354344bd89848ecddc09b6f07e/core-common-2.1.0.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/fe71b2ae8a30c55efd7ce16bf79047f2/transformed/jetified-lifecycle-livedata-core-ktx-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/da34d4923a58ad3730a96816a1eaa2be/transformed/lifecycle-livedata-core-2.5.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-common/2.5.1/1fdb7349701e9cf2f0a69fc10642b6fef6bb3e12/lifecycle-common-2.5.1.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/8450af93583a4a3c60573e49acdacd7d/transformed/jetified-transport-backend-cct-3.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/24cc5d5111a231838fd6e781130f72e1/transformed/jetified-transport-runtime-3.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/5771198201c79b5ce854580577243243/transformed/jetified-transport-api-3.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/65adccf2206e149c529487e5c271d241/transformed/jetified-firebase-components-17.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/76ee286c7de5a9266004db3063b5f31c/transformed/interpolator-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/944d69dcc9d3b0e41d87d41fe217d10f/transformed/documentfile-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/11b2c17021ba779a7722749164c7290d/transformed/localbroadcastmanager-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/8e4283856ad7ee84c70afe1b655b2059/transformed/print-1.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/444588f0d64416e99f444c8843b0c94a/transformed/jetified-firebase-encoders-json-18.0.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/e489cf83e33c8b56fbc4bbe2b12fe572/transformed/jetified-firebase-encoders-17.0.0.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/modules-2/files-2.1/androidx.annotation/annotation/1.3.0/21f49f5f9b85fc49de712539f79123119740595/annotation-1.3.0.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/196817f36c2868701cf90e9b578a3d75/transformed/jetified-kotlin-stdlib-jdk7-1.8.20.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/157bbcc278fa8200c91def4b4ba3f871/transformed/jetified-kotlin-stdlib-1.8.20.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/e6fe6f95ce6a53de9907cebbd4deab89/transformed/jetified-kotlin-stdlib-common-1.8.20.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/7abf7aefec9265736d453d6900d38356/transformed/jetified-annotations-13.0.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/3045033c72d1e60a8dba03f48b004006/transformed/jetified-annotation-experimental-1.1.0-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/ded02083ad21fadff07de735ad950167/transformed/jetified-listenablefuture-1.0.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/99b19234da9299a74a0274492fc5719c/transformed/jetified-startup-runtime-1.1.1-api.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/0c00d753aca3c48ba05de742e6307fcd/transformed/jetified-json-20170516.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/e715dd1d50252f59342daedec2a64e11/transformed/jetified-javax.inject-1.jar</arg>
+                <arg>D:/codecanyon-26714850-all-in-one-status-saver-whatsapp-whatsapp-business-facebook-instagram-tiktok-twitter/AllStatusSaver/caches/transforms-3/77b04ccaec4de8ea1198f678991df4ca/transformed/jetified-firebase-annotations-16.0.0.jar</arg>
+                <arg>$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-32/android.jar</arg>
+                <arg>$USER_HOME$/AppData/Local/Android/Sdk/build-tools/30.0.3/core-lambda-stubs.jar</arg>
+              </args>
+            </stringArg>
+            <stringArg name="destination" arg="$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/releaseUnitTest" />
+            <stringArg name="jvmTarget" arg="1.8" />
+            <stringArg name="moduleName" arg="app_releaseUnitTest" />
+            <stringArg name="apiVersion" arg="1.8" />
+            <stringArg name="languageVersion" arg="1.8" />
+          </stringArguments>
+          <arrayArguments>
+            <arrayArg name="friendPaths">
+              <args>
+                <arg>$MODULE_DIR$/../../../app/build/tmp/kotlin-classes/release</arg>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/javac/release/classes</arg>
+                <arg>$MODULE_DIR$/../../../app/build/intermediates/compile_app_classes_jar/release/classes.jar</arg>
+              </args>
+            </arrayArg>
+            <arrayArg name="pluginClasspaths" />
+            <arrayArg name="pluginOptions" />
+          </arrayArguments>
+        </compilerArguments>
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="release" />
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/release/classes" />
+    <output-test url="file://$MODULE_DIR$/../../../app/build/intermediates/javac/releaseUnitTest/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../app/build/generated/ap_generated_sources/releaseUnitTest/out" />
+    <content url="file://$MODULE_DIR$/../../../app/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../app/src/test/java" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../app/src/testRelease" />
+    <orderEntry type="jdk" jdkName="Android API 32 Platform" jdkType="Android SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Bangla_Keyboard.app.main" scope="TEST" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation:1.3.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.8.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.8.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-common:2.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-common:2.5.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection:1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.collection:collection-ktx:1.1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.vdurmont:emoji-java:4.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.json:json:20170516" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: javax.inject:javax.inject:1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-encoders:17.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-annotations:16.0.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.guava:listenablefuture:1.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.databinding:viewbinding:7.2.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat:1.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.activity:activity:1.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core:1.8.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.annotation:annotation-experimental:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.core:core-ktx:1.8.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate:1.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.appcompat:appcompat-resources:1.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.vectordrawable:vectordrawable:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.interpolator:interpolator:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.cursoradapter:cursoradapter:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.drawerlayout:drawerlayout:1.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.customview:customview:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.fragment:fragment:1.5.4@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.loader:loader:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager:viewpager:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.material:material:1.7.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.cardview:cardview:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.coordinatorlayout:coordinatorlayout:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.constraintlayout:constraintlayout:2.1.4@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.dynamicanimation:dynamicanimation:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.documentfile:documentfile:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.print:print:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.transition:transition:1.4.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-ktx:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-livedata-core-ktx:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.navigation:navigation-fragment:2.5.3@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.fragment:fragment-ktx:1.5.4@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.activity:activity-ktx:1.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.lifecycle:lifecycle-runtime-ktx:2.5.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.savedstate:savedstate-ktx:1.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.navigation:navigation-runtime:2.5.3@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.navigation:navigation-common:2.5.3@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.2.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.navigation:navigation-ui:2.5.3@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.nabinbhandari.android:permissions:3.8@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.play:core:1.10.3@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.onesignal:OneSignal:4.8.6@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-messaging:23.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-api:3.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-backend-cct:3.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.datatransport:transport-runtime:3.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-encoders-json:18.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-basement:17.6.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-cloud-messaging:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-tasks:17.2.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.android.gms:play-services-stats:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-common:20.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-components:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-datatransport:18.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-iid-interop:17.1.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-installations-interop:17.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.google.firebase:firebase-measurement-connector:19.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-v4:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.media:media:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.swiperefreshlayout:swiperefreshlayout:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.browser:browser:1.3.0@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.work:work-runtime:2.7.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: androidx.startup:startup-runtime:1.1.1@aar" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.airbnb.android:lottie:5.2.0@aar" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="Bangla_Keyboard.app.main" />
+</module>
