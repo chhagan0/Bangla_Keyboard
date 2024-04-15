@@ -7,9 +7,12 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.inputmethodservice.InputMethodService;
 
+import android.os.Build;
 import android.text.InputType;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 
 public class Keyboard extends InputMethodService implements CustomkeyboardView.CityButtonClickListener {
@@ -21,6 +24,18 @@ public class Keyboard extends InputMethodService implements CustomkeyboardView.C
     @Override
     public View onCreateInputView() {
         keyboardViView = (CustomkeyboardView) getLayoutInflater().inflate(R.layout.keyboard,null);
+
+        // Get the color theme from your keyboard app (replace R.color.keyboard_color with the actual color resource)
+        int keyboardColor = getResources().getColor(R.color.green);
+
+        // Set the navigation bar color
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Window window = getWindow().getWindow();
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+            window.setNavigationBarColor(keyboardColor);
+        }
+
+
         return keyboardViView;
     }
 
